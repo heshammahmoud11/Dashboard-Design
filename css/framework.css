@@ -1,0 +1,98 @@
+/* Start Component */
+.main-heading{
+    margin:20px 20px 40px;
+    position:relative;
+}
+.main-heading::before,
+.main-heading::after{
+    content: "";
+    position:absolute;
+    left:0;
+    bottom:-10px;
+}
+.main-heading::before{
+    width:130px;
+    height:3px;
+    background-color: White; 
+}
+.main-heading::after{
+    width:50px;
+    height:3px;
+    background-color:black; 
+}
+/*---------------------------*/
+ .prof-btn{
+    display: block;
+    background-color:var(--blue-color);
+    margin-top:25px;
+    width:fit-content;
+    margin-left:auto;
+    padding:7px 14px;
+    color:white;
+    margin-right:15px;
+    border-radius: 7px;
+    transition:0.3s;
+}
+ .prof-btn:hover{
+    background-color:var(--blue-alt-color);
+}
+/*---------------------------*/
+  .second-head p{
+    color:#777;
+    margin:10px 0;
+}
+/*---------------------------*/
+ .btn-shape{
+    margin-left:auto;
+    background-color:#eee;
+    padding:7px 7px;
+    font-size: 12px;
+    border-radius: 6px;
+    font-weight:500;
+}
+.btn-table{
+    padding:5px 7px;
+    border-radius:10px;
+    color:white;
+    font-size:12px;
+    font-weight:normal;
+}
+/* End Component */
+/* start toggle switch */
+.toggle-checkbox{
+-webkit-appearance:none;
+appearance:none;
+}
+.toggle-switch{
+    width:70px;
+    height:30px;
+    background-color:#ccc;
+    border-radius:15px;
+    position:relative;
+}
+.toggle-switch::before{
+    content:"\f00d";
+    font-family:"Font Awesome 5 Free";
+    font-weight:bold;
+    position:absolute;
+    width:20px;
+    height:20px;
+    background-color:white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:5px;
+    left:5px;
+    color:#aaa;
+    transition:0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch{
+    background-color:var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch:before{
+    content:"\f00c";
+    left:45px;
+    color:var(--blue-color);
+}
+/* End toggle switch */
